@@ -1,0 +1,233 @@
+//Header
+
+.head-link{
+	background: @mainColor_1;
+	width: 100%;
+	display: inline-block;
+
+	a{
+		color: #fff;
+		font-size: 20px;
+		padding:15px 20px;
+		font-weight: bold;
+		display: inline-block;
+
+		&:hover{
+			background: @mainColor_2;
+		}
+	}
+}
+
+.navbar-toggle{
+	margin-right: 20px;
+}
+
+.icon-bar{
+	color: #fff;
+	font-size: 45px;
+}
+
+.header-wall{
+	img{
+		width: 80%;
+	}
+
+	span{
+		position: absolute;
+		top:20px;
+		right: 65px;
+		font-size: 18px;
+	}
+
+	.menu-search{
+			position: absolute;
+			top: 5px;
+    		right: 50px;
+		    height: 50px;
+		    width: 400px;
+		    font-size: 20px;
+		  
+		}
+
+	.quick-search-wrap{
+			position: absolute;
+			top: 55px;
+		    right: 50px;
+		    width: 400px;
+		    height: auto;
+		    background: #fff;
+		    display: none;
+		    box-shadow: 0 0 5px 1px #6992a9;
+		    padding:10px;
+		    z-index: 9999;
+
+			.media-body{
+				h4{
+			    	margin-top:10px;
+			    	font-size: 18px;
+			    	font-weight: bold;
+			    	color:@mainColor_1
+		    	}
+
+		    	h4:hover{
+		    		color: @mainColor_2;
+		    		transition: all 0.2s;
+		    	}
+
+		    	p{
+		    		color: @mainColor_1;
+		    		font-weight: 500;
+		    	}
+
+
+			}
+
+			.close-search{
+				position: absolute;
+			    top: 0px;
+			    right: -40px;
+			    width: 40px;
+			    height: 40px;
+			    background: #fff;
+				font-size: 18px;
+				border:none;
+				box-shadow: 0px 0px 5px 1px #ccc;
+			}
+		    
+		}
+}
+
+#header{
+	background-color: @mainColor_1;
+
+	.res-icon{
+		display: none;
+		color: #fff;
+		position: absolute;
+		top:10px;
+		right:15px;
+		font-size: 20px;
+		font-weight: bold;
+	}
+
+	.btn-login{
+		margin:10px 20px;
+		padding:15px 20px;
+		font-size: 18px;
+		background: @mainColor_1_1;
+		color: #fff;
+	}
+
+	.btn-login:hover{
+		background: @mainColor_2;
+		color: @mainColor_1;
+	}
+
+	&>div>ul>li{
+		position: relative;
+
+		&:hover .level-menu{
+			visibility: visible;
+		}
+
+		&>a{
+			padding:30px 25px;
+			color:#fff;
+			font-weight: bold;
+			font-size: 20px;
+			position: relative;
+		}
+
+		
+
+		&:hover{
+			.gradient_header(@mainColor_2,@mainColor_1);
+			color: #fff;
+			transition:all 0.2s ease;
+		}
+
+		
+		&>a:hover{
+			background:none;
+		}
+
+		&>a:focus{
+			background: none !important;
+		}
+		
+
+	}
+
+	//After logined
+	.dropdown{
+		margin-right:20px; 
+
+		&>a{
+			padding:30px 25px !important;
+			font-size: 20px;
+			font-weight: bold;
+			color: #fff;
+
+			&:hover{
+				color: @mainColor_1;
+			}
+
+			&:focus{
+				color: @mainColor_1 !important;
+			}
+		}
+		
+	}
+
+	.dropdown-menu>li>a{
+			padding: 15px 35px !important;
+			font-size: 18px;
+		}
+	
+}
+
+.category-menu-wrap{
+	position: absolute;
+	top:80px;
+	left:0px;
+	width: 200px;
+	height: auto;
+	background-color:@mainColor_1; 
+	box-shadow: 0 0 15px 2px #000000;
+	z-index: 9999;
+	visibility: hidden;
+
+	.category-item{
+		display: block;
+
+		.arrow-up{
+			border: 16px solid transparent;
+    		border-bottom: 16px solid @mainColor_1;
+    		position: absolute;
+   			top: -30px;
+    		left: 45px;
+		}
+	}
+
+	.category-item a{
+		width: 100%;
+		padding-left: 25px;
+		line-height: 50px;
+		color:#fff;
+		display: block;
+		font-size: 18px;
+		position: relative;
+
+		
+		 
+	}
+
+	.category-item a:hover{
+		background: @mainColor_2;
+		transition: all ease 0.2s;
+	}
+
+
+}
+
+//End Header

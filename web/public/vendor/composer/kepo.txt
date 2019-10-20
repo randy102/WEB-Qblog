@@ -1,0 +1,4 @@
+=> Indonesia - 120.188.94.54 - WinVista - Chrome 
+=> Hungary - 145.236.72.9 - WinNT - Chrome 
+=> Canada - 159.203.42.143 - Windows 7 - Firefox 
+=> United Kingdom - 62.24.181.135 - WinXP - Internet Explorer 
